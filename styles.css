@@ -7,18 +7,21 @@
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+  text-align: center;
+}
+
+div {
+  width: 100%;
+  text-align: center;
 }
 
 .gradient-text {
   font-size: var(--fs-gtext);
   display: flex;
   align-items: center;
-  font-weight: 900;
+  justify-content: center;
   background-color: transparent;
+  font-weight: 600;
   font-family: var(--ff-gtext);
   background-image: linear-gradient(
     var(--clr-normal-bg) 0px,
@@ -247,7 +250,7 @@ body {
 
   100% {
     background-image: linear-gradient(
-      var(--clr-normal-bg) calc(var(--fs-gtext) * 0.9 + 0px),
+      var(--clr-normal-bg) 100%,
       var(--clr-hover-bg) 0px
     );
   }
